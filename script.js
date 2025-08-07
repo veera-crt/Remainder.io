@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         sendOtpBtn.disabled = true;
         sendOtpBtn.textContent = 'Sending OTP...';
 
-        fetch('http://localhost:5000/send_otp', {
+        fetch('https://remainder-io.onrender.com/send_otp', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
         verifyOtpBtn.disabled = true;
         verifyOtpBtn.textContent = 'Verifying...';
 
-        fetch('http://localhost:5000/verify_otp', {
+        fetch('https://remainder-io.onrender.com/verify_otp', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
